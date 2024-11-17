@@ -74,6 +74,6 @@ article h3 {
     transition: transform .5s;
     box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
     flex-basis: 23%;
-}
+    }
 
 }
