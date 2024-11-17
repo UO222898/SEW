@@ -66,14 +66,14 @@ article h3 {
 
     /*Especificidad: 001*/
     article {
-    height: 10em;
-    margin: 0.2em;
-    transform: scale(1);
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
-    flex-basis: 23%;
+        height: 10em;
+        margin: 0.2em;
+        transform: scale(1);
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
+        flex-basis: 50%;
     }
 
 }
