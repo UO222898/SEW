@@ -4,8 +4,8 @@ section:last-of-type{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;    
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 /*Especificidad: 012*/
@@ -19,12 +19,12 @@ section:last-of-type h2{
 /*Especificidad: 001*/
 article {
     height: 20em;
-    margin: 5px;
+    margin: 0.4em;
     transform: scale(1);
     cursor: pointer;
     transform-style: preserve-3d;
     transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
     flex-basis: 23%;
 }
   
@@ -42,7 +42,7 @@ article h3, article img {
     width: 100%;
     height: 100%;
     position: absolute;
-    border-radius: 5px;
+    border-radius: 0.3em;
     background: #1C7CCC;
     backface-visibility: hidden;
 }
@@ -55,3 +55,25 @@ article h3 {
     justify-content: center;
 }
   
+/*Media Query*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    /*Especificidad: 011*/
+    section:last-of-type{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;    
+    }
+
+    /*Especificidad: 001*/
+    article {
+    height: 10em;
+    margin: 0.2em;
+    transform: scale(1);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
+    flex-basis: 23%;
+}
+
+}
