@@ -1,0 +1,14 @@
+/* Celia Bobo Rodríguez-Noriega UO222898 */
+/*Especificidad: 011*/
+section:last-of-type {
+    margin: auto;
+      
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+}
+/*Especificidad: 012*/
+section:last-of-type h2{
+    grid-column: 1 / -1;
+}
