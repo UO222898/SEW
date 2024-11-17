@@ -3,19 +3,18 @@
 <html lang="es">
 <head>
     <!-- Datos que describen el documento -->
-    <title>F1 Desktop-Noticias</title>
+    <title>F1 Desktop</title>
     <meta charset="UTF-8" />
     <meta name ="author" content ="Celia Bobo Rodríguez-Noriega" />
-    <meta name ="description" content ="Página con noticias acerca del piloto" />
+    <meta name ="description" content ="Página del juego del semáforo" />
     <meta name ="keywords" content ="Palabras clave del documento separadas por comas" />
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href ="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href ="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href ="estilo/semaforo_grid.css" />
     <link rel="icon" href="multimedia/imagenes/favicon.png"/>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"></script>
-    <script src="js/noticias.js"></script>
+    <script src="js/semaforo.js"></script>
+
 </head>
 
 <body>
@@ -36,18 +35,19 @@
         </nav>
     </header>
 
-    <p>Estás en: <a href= "index.html">Inicio</a> >> Noticias</p>
+    <p>Estás en: <a href= "index.html">Inicio</a> >> <a href= "juegos.html">Juegos</a> >> Juego de tiempo de reacción</p>
 
-    <h2>Noticias</h2>
-    <script>
-        var noticias = new Noticias()
+    <section>
+        <h2>Juegos</h2>
+        <p><a href="memoria.html">Juego de memoria</a></p>
+        <p><a href="semaforo.html">Juego de tiempo de reacción</a></p>
+    </section>
 
-    </script>
-
-    <p><input type="file" onchange="noticias.readInputFile(this.files);"></p>
     <main>
-        
+        <script>
+            semaforo = new Semaforo()
+        </script>
     </main>
-
+    
 </body>
 </html>
