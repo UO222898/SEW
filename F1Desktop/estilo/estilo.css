@@ -158,8 +158,18 @@ video {
 @media screen and (min-width: 320px) and (max-width: 480px) {
      /*Especificidad 011
     */
-    p:first-of-type {
+    body > p:first-of-type {
       display: none;
+    }
+
+    /*Especificidad 001
+    Hereda de body background-color:#b1d4e0*/
+    table{
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px double #B57162;
+        color: #141414;
     }
 
 }

@@ -53,6 +53,7 @@ article h3 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
   
 /*Media Query*/
@@ -62,6 +63,8 @@ article h3 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;    
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     /*Especificidad: 001*/
@@ -73,7 +76,29 @@ article h3 {
         transform-style: preserve-3d;
         transition: transform .5s;
         box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
-        flex-basis: 50%;
+        flex-basis: 48%;
     }
 
+}
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+
+    /*Especificidad: 011*/
+    section:last-of-type{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;    
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+   /*Especificidad: 001*/
+    article {
+        height: 10em;
+        margin: 0.2em;
+        transform: scale(1);
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
+        flex-basis: 30%;
+    }
 }
