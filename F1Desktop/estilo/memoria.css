@@ -95,7 +95,7 @@ ol li > ul li{
     }
    /*Especificidad: 001*/
     article {
-        height: 10em;
+        height: 8em;
         margin: 0.2em;
         box-shadow: 0.05em 0.05em 0.05em rgba(0,0,0,.3);
         flex-basis: 30%;
